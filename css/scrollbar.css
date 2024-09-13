@@ -1,0 +1,38 @@
+/* Styling for WebKit browsers (Chrome, Safari, etc.) */
+body {
+  background-color: #201a18; /* Set the page background */
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #201a18; /* Scrollbar track color */
+  border-radius: 10px; /* Make the scrollbar track rounded */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e3b39; /* Scrollbar thumb color */
+  border-radius: 10px; /* Make the scrollbar thumb rounded */
+  border: 3px solid #201a18; /* Padding to create space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #605c59; /* Hover effect on scrollbar thumb */
+}
+
+/* For Firefox (uses different pseudo-element names) */
+html {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #3e3b39 #201a18; /* Thumb color and track color */
+}
+
+/* Rounded scrollbar for Firefox */
+html {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #201a18; /* Corner color when both scrollbars are visible */
+}

@@ -1,0 +1,38 @@
+.appbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.appbar img {
+  height: 100px;
+}
+
+.appbar .title {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appbar .title h1 {
+  margin: 0px;
+  font-size: 2em;
+}
+.appbar .title p {
+  margin: 0px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .appbar {
+    flex-direction: column;
+  }
+}

@@ -1,82 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
   <head>
-    <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-    <base href="/" />
-
     <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta
-      name="description"
-      content="Open source, free, and ad-free apps for Muslims."
-    />
-
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="muslimpack" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muslimpack</title>
-    <link rel="manifest" href="manifest.json" />
 
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Muslimpack" />
-    <meta property="og:description" content="Muslimpack apps." />
-    <meta property="og:image" content="icons/Icon-512.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:type" content="image/png" />
-
-    <!-- other -->
-    <meta name="description" content="Muslimpack apps" />
-    <meta name="theme-color" content="#330000" />
-    <meta name="page-topic" content="apps" />
-    <meta name="page-type" content="App" />
-    <meta name="audience" content="Everyone" />
-    <meta name="author" content="Hassan Eltantawy" />
-    <meta name="copyright" content="Hassan Eltantawy" />
     <meta
-      name="keywords"
-      content="quran,hisn_elmoslem,qadaa,ruqayyah,alazkar,mudawanat_aleibadat,قرآن, حصن المسلم,الأذكار النووية ,قضاء , مدونة العبادات,رقية"
+      property="og:description"
+      content="Muslimpack open source, free and ad-free apps for muslims."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon and Apple Touch Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-icon-180x180.png"
     />
 
-    <script>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "2510426782";
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
-    <script>
-      window.addEventListener("load", function (ev) {
-        // Download main.dart.js
-        _flutter.loader.loadEntrypoint({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
-          onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer.initializeEngine().then(function (appRunner) {
-              appRunner.runApp();
-            });
-          },
-        });
-      });
-    </script>
+    <div class="appbar">
+      <img src="assets/images/logo.png" alt="muslimpack logo" />
+      <div class="title">
+        <h1>Muslimpack</h1>
+        <p>تطبيقات مجانية ومفتوحة المصدر وخالية من الإعلانات</p>
+      </div>
+    </div>
+
+    <div class="scaffold">
+      <div class="body" id="body"></div>
+    </div>
+
+    <div class="footer">
+      <div class="social-icons">
+        <a
+          href="https://x.com/muslimpack"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://facebook.com/muslimpack.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="https://github.com/muslimpack"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="js/app_data.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
