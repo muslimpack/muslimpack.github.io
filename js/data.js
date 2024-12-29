@@ -51,4 +51,13 @@ const apps = [
     githubIdentifier: "/muslimpack/mudawanat_aleibadat",
     packageId: "com.hassaneltantawy.mudawanat_aleibadat",
   }),
+  new AppData({
+    name: "الكامل في السنن",
+    shortDesc:
+      'السنة النبوية من أصح الصحيح إلى أضعف الضعيف تطبيق في السنة عن كتاب "الكامل في السنن" لمؤلفه الدكتور عامر أحمد الحسيني',
+    imageUrl:
+      "https://raw.githubusercontent.com/muslimpack/alkamel/main/alkamel/assets/images/app_icon.png",
+    githubIdentifier: "/muslimpack/alkamel",
+    // packageId: "com.hassaneltantawy.alkamel",
+  }),
 ];
