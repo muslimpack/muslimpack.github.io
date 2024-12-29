@@ -23,7 +23,7 @@ const apps = [
       "عن كتاب الأذكار للإمام الحافظ يحيى بن شرف الدين النووي رحمه الله",
     githubIdentifier: "/muslimpack/Al-Azkar",
     imageUrl:
-      "https://raw.githubusercontent.com/muslimpack/Al-Azkar/dev/alazkar/assets/icons/app.png",
+      "https://raw.githubusercontent.com/muslimpack/Al-Azkar/main/alazkar/assets/icons/app.png",
     packageId: "com.hassaneltantawy.alazkar",
   }),
   new AppData({
