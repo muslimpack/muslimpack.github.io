@@ -16,6 +16,12 @@ function createCard(app) {
               alt="Google Play Downloads"
               class="badge"
             />`
+            : app.githubIdentifier
+            ? `<img
+              src="${Links.githubReleasesCountBadge(app.githubIdentifier)}"
+              alt="Google Play Downloads"
+              class="badge"
+            />`
             : ""
         }
           </div>
