@@ -7,6 +7,7 @@ class Links {
   static kGooglePlayDownloads =
     "https://PlayBadges.pavi2410.me/badge/downloads?id=";
   static kGooglePlayBaseURL = "https://play.google.com/store/apps/details?id=";
+  static kFdroidBaseURL = "https://f-droid.org/packages/";
 
   // Methods
 
@@ -34,5 +35,9 @@ class Links {
 
   static googlePlayBadge(packageId) {
     return `${Links.kGooglePlayDownloads}${packageId}`;
+  }
+
+  static fdroidURl(packageId) {
+    return `${Links.kFdroidBaseURL}${packageId}`;
   }
 }

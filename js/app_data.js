@@ -7,6 +7,7 @@ class AppData {
     githubIdentifier = null,
     imageUrl = null,
     packageId = null,
+    fdroid = null,
   }) {
     this.name = name;
     this.shortDesc = shortDesc;
@@ -15,5 +16,6 @@ class AppData {
     this.githubIdentifier = githubIdentifier;
     this.imageUrl = imageUrl;
     this.packageId = packageId;
+    this.fdroid = fdroid;
   }
 }

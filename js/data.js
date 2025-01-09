@@ -16,6 +16,7 @@ const apps = [
     githubIdentifier: "/muslimpack/HisnElmoslem_App",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/HisnElmoslem_App/main/hisnelmoslem/assets/images/app_icon.png",
+    fdroid: "com.hassaneltantawy.hisnelmoslem",
   }),
   new AppData({
     name: "تطبيق الأذكار النووية",
@@ -25,6 +26,7 @@ const apps = [
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Al-Azkar/main/alazkar/assets/icons/app.png",
     packageId: "com.hassaneltantawy.alazkar",
+    fdroid: "com.hassaneltantawy.alazkar",
   }),
   new AppData({
     name: "تطبيق رقية",
@@ -42,6 +44,7 @@ const apps = [
       "https://raw.githubusercontent.com/muslimpack/Qadaa/main/qadaa/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/Qadaa",
     packageId: "com.hassaneltantawy.qadaa",
+    fdroid: "com.hassaneltantawy.qadaa",
   }),
   new AppData({
     name: "تطبيق مدونة العبادات",

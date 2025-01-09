@@ -42,6 +42,13 @@ function createCard(app) {
         <a href="${Links.githubLink(
           app.githubIdentifier
         )}" target="_blank" class="fab fa-github"></a>
+        ${
+          app.fdroid
+            ? `<a href="${Links.fdroidURl(
+                app.fdroid
+              )}" target="_blank" class="fa-brands fa-android"></a>`
+            : ""
+        }
       </div>
     </div>
   `;
