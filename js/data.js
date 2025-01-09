@@ -55,7 +55,7 @@ const apps = [
     packageId: "com.hassaneltantawy.mudawanat_aleibadat",
   }),
   new AppData({
-    name: "الكامل في السنن",
+    name: "تطبيق الكامل في السنن",
     shortDesc:
       'السنة النبوية من أصح الصحيح إلى أضعف الضعيف تطبيق في السنة عن كتاب "الكامل في السنن" لمؤلفه الدكتور عامر أحمد الحسيني',
     imageUrl:
@@ -64,7 +64,7 @@ const apps = [
     // packageId: "com.hassaneltantawy.alkamel",
   }),
   new AppData({
-    name: "معالم السنة النبوية",
+    name: "تطبيق معالم السنة النبوية",
     shortDesc:
       "وهو خلاصة 14 كتابا هي أصول كتب السنة شرف بجمعه صالح أحمد الشامي",
     imageUrl:
