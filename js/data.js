@@ -60,4 +60,13 @@ const apps = [
     githubIdentifier: "/muslimpack/alkamel",
     // packageId: "com.hassaneltantawy.alkamel",
   }),
+  new AppData({
+    name: "معالم السنة النبوية",
+    shortDesc:
+      "وهو خلاصة 14 كتابا هي أصول كتب السنة شرف بجمعه صالح أحمد الشامي",
+    imageUrl:
+      "https://raw.githubusercontent.com/muslimpack/maalem_alsunnah/main/maalem_alsunnah/assets/images/app_icon.png",
+    githubIdentifier: "/muslimpack/maalem_alsunnah",
+    packageId: "com.hassaneltantawy.maalem_alsunnah",
+  }),
 ];
