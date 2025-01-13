@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1a1412;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .social-icons a {
-  color: #ccc;
+  color: var(--icon-color);
   margin-left: 10px;
   text-decoration: none;
   font-size: 20px;
@@ -26,6 +26,6 @@
 }
 
 .social-icons a:hover {
-  color: #fff;
+  color: var(--icon-hover-color);
   transform: scale(1.1);
 }

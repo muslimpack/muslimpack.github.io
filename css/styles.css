@@ -5,10 +5,19 @@
 @import "scaffold-bottombar.css";
 @import "scrollbar.css";
 
+:root {
+  --primary-color: #201a18;
+  --secondary-color: #2b211e;
+  --text-color: #ede0dc;
+  --icon-color: #ccc;
+  --icon-hover-color: #fff;
+  --icon-visted-color: #a67c52;
+}
+
 body {
   font-family: Roboto, sans-serif;
-  background-color: #201a18;
+  background-color: var(--primary-color);
   padding: 20px;
-  color: #ede0dc;
+  color: var(--text-color);
   scroll-behavior: smooth;
 }

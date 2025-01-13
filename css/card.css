@@ -1,5 +1,5 @@
 .card {
-  background-color: #2b211e;
+  background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 15px;
 
@@ -52,11 +52,11 @@
 }
 
 .card .buttons a:visited {
-  color: #a67c52;
+  color: var(--icon-visted-color);
 }
 
 .card .buttons a:hover {
-  color: #fff;
+  color: var(--icon-hover-color);
   transform: scale(1.1);
 }
 
