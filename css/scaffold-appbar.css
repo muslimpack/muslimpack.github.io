@@ -14,12 +14,12 @@
 }
 
 .appbar .title {
-  margin: 0px;
-  width: 100%;
-  display: flex;
   font-size: 25px;
   flex-direction: column;
-  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .appbar .title h1 {
@@ -34,5 +34,11 @@
 @media (max-width: 767px) {
   .appbar {
     flex-direction: column;
+  }
+
+  .appbar .title {
+    position: unset;
+    left: unset;
+    transform: unset;
   }
 }
