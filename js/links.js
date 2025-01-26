@@ -30,7 +30,7 @@ class Links {
   }
 
   static githubReleasesCountBadge(githubIdentifier) {
-    return `https://img.shields.io/github/downloads${githubIdentifier}/total?color=brown&label=Downloads`;
+    return `https://img.shields.io/github/downloads${githubIdentifier}/total?color=brown&label=GitHub`;
   }
 
   static googlePlayBadge(packageId) {
