@@ -33,20 +33,20 @@ function createCard(app) {
           app.packageId
             ? `<a href="${Links.googlePlayURL(
                 app.packageId
-              )}" target="_blank" class="fab fa-google-play"></a>`
+              )}" target="_blank"><i class="fab fa-google-play"></i></a>`
             : ""
         }
         <a href="${Links.windowsURL(
           app.githubIdentifier
-        )}" target="_blank" class="fab fa-windows"></a>
+        )}" target="_blank"><i class="fab fa-windows"></i></a>
         <a href="${Links.githubLink(
           app.githubIdentifier
-        )}" target="_blank" class="fab fa-github"></a>
+        )}" target="_blank"><i class="fab fa-github"></i></a>
         ${
           app.fdroid
             ? `<a href="${Links.fdroidURl(
                 app.fdroid
-              )}" target="_blank" class="fa-brands fa-android"></a>`
+              )}" target="_blank"><i class="fa-brands fa-android"></i></a>`
             : ""
         }
       </div>
