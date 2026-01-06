@@ -27,6 +27,8 @@ const apps = [
       "https://raw.githubusercontent.com/muslimpack/Al-Azkar/main/alazkar/assets/icons/app.png",
     packageId: "com.hassaneltantawy.alazkar",
     fdroid: "com.hassaneltantawy.alazkar",
+    appStoreURL:
+      "https://apps.apple.com/us/app/%D8%A7%D9%84%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%88%D9%88%D9%8A%D8%A9/id6756480296",
   }),
   new AppData({
     name: "تطبيق رقية",
@@ -36,6 +38,8 @@ const apps = [
     githubIdentifier: "/muslimpack/Ruqayyah",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Ruqayyah/main/ruqayyah/assets/images/logo.png",
+    appStoreURL:
+      "https://apps.apple.com/us/app/rukia-%D8%B1%D9%82%D9%8A%D8%A9/id6756537897",
   }),
   new AppData({
     name: "تطبيق قضاء",
@@ -71,5 +75,7 @@ const apps = [
       "https://raw.githubusercontent.com/muslimpack/maalem_alsunnah/main/maalem_alsunnah/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/maalem_alsunnah",
     packageId: "com.hassaneltantawy.maalem_alsunnah",
+    appStoreURL:
+      "https://apps.apple.com/us/app/%D9%85%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B3%D9%86%D8%A9-%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9/id6756390086",
   }),
 ];

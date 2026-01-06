@@ -39,6 +39,11 @@ function createCard(app) {
               )}" target="_blank"><i class="fab fa-google-play"></i></a>`
             : ""
         }
+        ${
+          app.appStoreURL
+            ? `<a href="${app.appStoreURL}" target="_blank"><i class="fab fa-apple"></i></a>`
+            : ""
+        }
         <a href="${Links.windowsURL(
           app.githubIdentifier
         )}" target="_blank"><i class="fab fa-windows"></i></a>
