@@ -49,7 +49,7 @@ function createCard(app) {
           app.fdroid
             ? `<a href="${Links.fdroidURl(
                 app.fdroid
-              )}" target="_blank"><i class="fa-brands fa-android"></i></a>`
+              )}" target="_blank"><img src="assets/images/f-droid.svg" alt="F-Droid" class="fdroid-icon" /></a>`
             : ""
         }
       </div>
