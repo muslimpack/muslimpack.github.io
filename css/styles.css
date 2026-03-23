@@ -397,6 +397,7 @@ body.page-home {
   align-items: center;
   gap: 7px;
   padding: 8px 18px;
+  white-space: nowrap;
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1120,6 +1121,12 @@ a.value:hover {
   }
   .brand-text p {
     display: none;
+  }
+  .nav-pill span {
+    display: none;
+  }
+  .nav-pill {
+    padding: 8px 12px;
   }
   .hero {
     padding: 48px 16px 40px;
