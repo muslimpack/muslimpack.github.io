@@ -47,23 +47,6 @@
         -webkit-backdrop-filter: blur(24px) saturate(160%);
         box-shadow: var(--shadow-glass);
       }
-      @media (max-width: 768px) {
-        .app-header-large {
-          flex-direction: column;
-          text-align: center;
-        }
-        .gallery-grid img {
-          height: 350px;
-        }
-        .download-section {
-          justify-content: center;
-        }
-      }
-      @media (max-width: 480px) {
-        .gallery-grid img {
-          height: 280px;
-        }
-      }
       .app-icon-large {
         width: 120px;
         height: 120px;
@@ -72,23 +55,31 @@
         box-shadow: var(--shadow-glow);
       }
       .app-title-area h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
+        font-size: 2.25rem;
+        margin-bottom: 12px;
         color: var(--text-primary);
+        font-weight: 800;
       }
       .app-title-area .badges {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 15px;
+        gap: 10px;
+        margin-bottom: 20px;
       }
       .app-description {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: var(--text-secondary);
         line-height: 1.8;
+        max-width: 800px;
+      }
+      .download-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; /* Fixed: Added gap to prevent sticking */
+        margin-top: 35px;
       }
       .screenshots-gallery {
-        margin: 40px 0;
+        margin: 50px 0;
       }
       .gallery-grid {
         display: flex;
@@ -96,60 +87,66 @@
         overflow-x: auto;
         padding: 20px 0;
         scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .gallery-grid::-webkit-scrollbar {
+        display: none;
       }
       .gallery-grid img {
-        height: 450px;
-        border-radius: 16px;
+        height: 480px;
+        border-radius: 20px;
         scroll-snap-align: start;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
       .gallery-grid img:hover {
-        transform: scale(1.02);
-      }
-      .download-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 30px;
+        transform: scale(1.03) translateY(-5px);
       }
       .back-button {
         display: inline-flex;
         align-items: center;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 12px;
+        margin-bottom: 25px;
         color: var(--text-secondary);
         text-decoration: none;
-        font-weight: 600;
-        transition: color 0.2s;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        padding: 8px 16px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid transparent;
       }
       .back-button:hover {
         color: var(--accent-gold);
+        background: rgba(201, 169, 110, 0.1);
+        border-color: rgba(201, 169, 110, 0.2);
+        transform: translateX(-5px);
       }
       
       /* Expert Content Styles */
       .app-details-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-bottom: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 35px;
+        margin-bottom: 50px;
       }
       .details-section {
-        padding: 30px;
-        border-radius: var(--radius-card);
+        padding: 35px;
+        border-radius: 24px;
         background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         backdrop-filter: blur(24px) saturate(160%);
         -webkit-backdrop-filter: blur(24px) saturate(160%);
+        box-shadow: var(--shadow-glass);
       }
       .section-title {
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 25px;
         color: var(--accent-teal);
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 15px;
       }
       .features-list, .changelog-list {
         list-style: none;
@@ -157,28 +154,95 @@
       }
       .features-list li, .changelog-list li {
         position: relative;
-        padding-right: 25px;
-        margin-bottom: 12px;
-        line-height: 1.6;
+        padding-right: 30px;
+        margin-bottom: 15px;
+        line-height: 1.7;
         color: var(--text-secondary);
+        font-size: 1.05rem;
       }
       .features-list li::before {
-        content: "•";
+        content: "\f058"; /* FontAwesome check-circle */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
         position: absolute;
         right: 0;
         color: var(--accent-teal);
-        font-weight: bold;
       }
       .changelog-list li::before {
-        content: "→";
+        content: "\f061"; /* FontAwesome arrow-right */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
         position: absolute;
         right: 0;
         color: var(--accent-gold);
-        font-weight: bold;
+        font-size: 0.9rem;
       }
-      @media (max-width: 768px) {
+
+      /* Responsive Adjustments */
+      @media (max-width: 900px) {
         .app-details-grid {
           grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .details-container {
+          margin: 20px auto;
+          padding: 0 15px;
+        }
+        .app-header-large {
+          flex-direction: column;
+          text-align: center;
+          padding: 30px 20px;
+          gap: 25px;
+        }
+        .app-icon-large {
+          width: 110px;
+          height: 110px;
+        }
+        .app-title-area h1 {
+          font-size: 1.9rem;
+        }
+        .app-title-area .badges {
+          justify-content: center;
+        }
+        .app-description {
+          font-size: 1.05rem;
+          margin: 0 auto;
+        }
+        .gallery-grid img {
+          height: 380px;
+        }
+        .download-section {
+          justify-content: center;
+          gap: 12px;
+        }
+        .btn-download {
+          flex: 1 1 150px;
+          justify-content: center;
+          padding: 12px 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .app-icon-large {
+          width: 90px;
+          height: 90px;
+        }
+        .app-title-area h1 {
+          font-size: 1.6rem;
+        }
+        .gallery-grid img {
+          height: 320px;
+        }
+        .btn-download {
+          flex: 1 1 100%;
+        }
+        .details-section {
+          padding: 25px 20px;
+        }
+        .section-title {
+          font-size: 1.3rem;
         }
       }
     </style>
