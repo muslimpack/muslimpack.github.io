@@ -1,70 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support | Muslim Pack</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta property="og:image" content="/assets/images/logo.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Official Support | Muslimpack Open Source Initiative</title>
+    <meta
+      name="description"
+      content="Official support center for Muslimpack. Connect with our developers, submit feedback, or request new features for our suite of open-source Islamic applications."
+    />
+    <meta
+      name="keywords"
+      content="Muslimpack, Support, Help, Open Source, Islam, Community, Contact"
+    />
+    <link rel="canonical" href="https://muslimpack.github.io/support/" />
+    <meta
+      property="og:title"
+      content="Muslimpack Support | We're here to help"
+    />
+    <meta
+      property="og:description"
+      content="Dedicated support and community feedback for Muslimpack's open-source apps."
+    />
+    <meta
+      property="og:image"
+      content="https://muslimpack.github.io/assets/images/logo.png"
+    />
+    <meta property="og:url" content="https://muslimpack.github.io/support/" />
     <meta property="og:type" content="website" />
-
-    <!-- Favicon and Apple Touch Icon -->
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/images/apple-icon-180x180.png"
+      href="../assets/images/apple-icon-180x180.png"
     />
-</head>
-<body>
 
-<div class="container">
-    <div class="logo-wrapper">
-        <img src="/assets/images/logo.png" alt="Muslim Pack Logo" class="logo">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="page-support">
+    <!-- Ambient background -->
+    <div class="bg-canvas" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="noise-overlay"></div>
     </div>
-    
-    <h1>Muslim Pack Support</h1>
-    <p class="slogan">Open source, free, and ad-free apps for Muslims.</p>
 
-    <div class="contact-grid">
-        <div class="contact-item">
+    <main class="support-container">
+      <!-- Back link -->
+      <a href="/" class="back-link">
+        <i class="fas fa-arrow-right"></i>
+        <span>العودة للرئيسية</span>
+      </a>
+
+      <!-- Logo & Brand -->
+      <header class="brand-header">
+        <div class="logo-ring">
+          <img
+            src="/assets/images/logo.png"
+            alt="Muslimpack Logo"
+            width="56"
+            height="56"
+          />
+        </div>
+        <div class="brand-badge">Support Center</div>
+      </header>
+
+      <!-- Title -->
+      <section class="hero-block">
+        <h1>كيف يمكننا<br /><span class="gradient-text">مساعدتك؟</span></h1>
+        <p class="slogan">
+          Open source · free · ad-free apps for Muslims.<br />We're always happy
+          to hear from you.
+        </p>
+      </section>
+
+      <!-- Contact cards -->
+      <div class="contact-grid">
+        <article class="contact-item">
+          <div class="contact-icon-wrap">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-content">
             <span class="label">Contact Email</span>
-            <span class="value">
-                <span class="icon">✉</span>
-                <a href="mailto:muslimpack.org@gmail.com">muslimpack.org@gmail.com</a>
-            </span>
-        </div>
-        
-        <div class="contact-item">
+            <a
+              href="mailto:muslimpack.org@gmail.com"
+              class="value"
+              aria-label="Email Muslimpack"
+            >
+              muslimpack.org@gmail.com
+            </a>
+          </div>
+          <i class="fas fa-arrow-left contact-arrow"></i>
+        </article>
+
+        <article class="contact-item">
+          <div class="contact-icon-wrap">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-content">
             <span class="label">Phone Support</span>
-            <span class="value">
-                <span class="icon">📞</span>
-                <a href="tel:+201009973592">+20 100 997 3592</a>
-            </span>
-        </div>
+            <a
+              href="tel:+201009973592"
+              class="value"
+              aria-label="Call Muslimpack support"
+            >
+              +20 100 997 3592
+            </a>
+          </div>
+          <i class="fas fa-arrow-left contact-arrow"></i>
+        </article>
 
-        <div class="contact-item">
+        <article class="contact-item">
+          <div class="contact-icon-wrap">
+            <i class="fas fa-location-dot"></i>
+          </div>
+          <div class="contact-content">
             <span class="label">Legal Address</span>
-            <span class="value">
-                <span class="icon">📍</span>
-                <span>Mansoura, Egypt</span>
-            </span>
+            <span class="value">Mansoura, Egypt 🇪🇬</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Developer card -->
+      <div class="dev-strip glass-strip">
+        <div class="dev-left">
+          <div class="dev-avatar"><i class="fas fa-code"></i></div>
+          <div>
+            <span class="dev-meta">Developer</span>
+            <p class="dev-name">Hassan ELtantawy</p>
+            <span class="dev-love"
+              >Made with <span class="heart">♥</span> in Egypt</span
+            >
+          </div>
         </div>
-    </div>
+        <div class="dev-right">
+          <a
+            href="https://github.com/7Eltantawy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dev-btn"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/7Eltantawy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dev-btn dev-btn--fb"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Muslim Pack</p>
-        <p style="font-size: 0.85em; opacity: 0.7;">For general feedback and feature enhancement requests.</p>
-        <a href="https://github.com/muslimpack" class="github-link">
+      <!-- Footer -->
+      <footer class="support-footer">
+        <p>&copy; 2026 Muslimpack · All rights reserved.</p>
+        <p class="footer-sub">
+          For general feedback and feature enhancement requests.
+        </p>
+        <div class="footer-links">
+          <a
+            href="https://github.com/muslimpack"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-pill"
+            aria-label="GitHub Organization"
+          >
+            <i class="fab fa-github"></i>
             <span>GitHub Organization</span>
-        </a>
-    </div>
-</div>
-
-</body>
+          </a>
+          <a
+            href="https://x.com/muslimpack"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-pill"
+            aria-label="Twitter / X"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://facebook.com/muslimpack.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-pill"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fmuslimpack%2Fmuslimpackgithubio.json&style=flat-square&label=Visitors&labelColor=222d3a&color=38c9a8" alt="" class="tracking-pixel">
+        </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

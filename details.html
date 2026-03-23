@@ -3,44 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muslimpack | Free & Open Source Apps for Muslims</title>
+    <title>تفاصيل التطبيق - Muslimpack</title>
+
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Muslimpack provides open source, free, and ad-free applications designed for Muslims, including Quran, Hisn Elmoslem, and more."
+      content="تعرف على تفاصيل ومميزات تطبيقات مًسلم باك."
     />
-    <meta
-      name="keywords"
-      content="Muslim, Islam, Apps, Open Source, Quran, Hisn Elmoslem, Prayer, Salah, Ad-free"
-    />
-    <meta name="author" content="Muslimpack" />
-    <link rel="canonical" href="https://muslimpack.github.io/" />
-    <meta
-      property="og:title"
-      content="Muslimpack | Free & Open Source Apps for Muslims"
-    />
-    <meta
-      property="og:description"
-      content="Open source, free and ad-free apps for muslims. Join our community on GitHub."
-    />
-    <meta
-      property="og:image"
-      content="https://muslimpack.github.io/assets/images/logo.png"
-    />
-    <meta property="og:url" content="https://muslimpack.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Muslimpack | Free & Open Source Apps for Muslims"
-    />
-    <meta
-      name="twitter:description"
-      content="Open source, free and ad-free apps for muslims."
-    />
-    <meta
-      name="twitter:image"
-      content="https://muslimpack.github.io/assets/images/logo.png"
-    />
+    <meta name="author" content="Hassan ELtantawy" />
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -61,15 +32,17 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cairo:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
   <body class="page-home">
     <!-- Ambient background orbs -->
     <div class="bg-canvas" aria-hidden="true">
@@ -83,7 +56,7 @@
     <!-- Header -->
     <header class="appbar glass-panel">
       <div class="appbar-inner">
-        <div class="brand">
+        <a href="index.html" class="brand" style="text-decoration: none">
           <div class="logo-ring">
             <img
               src="assets/images/logo.png"
@@ -96,7 +69,7 @@
             <h1>Muslimpack</h1>
             <p>تطبيقات مجانية · مفتوحة المصدر · بلا إعلانات</p>
           </div>
-        </div>
+        </a>
         <nav class="nav-links">
           <a href="support/" class="nav-pill">
             <i class="fas fa-headset"></i>
@@ -115,70 +88,20 @@
       </div>
     </header>
 
-    <!-- Hero strip -->
-    <section class="hero">
-      <h2 class="hero-title">
-        تطبيقات صُنعت<br /><span class="gradient-text">للمسلم المعاصر</span>
-      </h2>
+    <main class="details-container">
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-right"></i> العودة للرئيسية
+      </a>
 
-      <div class="hero-stats">
-        <div class="stat-pill">
-          <i class="fas fa-shield-halved"></i> بلا إعلانات
+      <div id="app-content">
+        <!-- Dynamic content will be injected here -->
+        <div style="text-align: center; padding: 100px">
+          <i class="fas fa-spinner fa-spin fa-3x"></i>
+          <p style="margin-top: 20px">جاري تحميل تفاصيل التطبيق...</p>
         </div>
-        <div class="stat-pill">
-          <i class="fas fa-code-branch"></i> مفتوح المصدر
-        </div>
-        <div class="stat-pill"><i class="fas fa-infinity"></i> مجاني للأبد</div>
-      </div>
-    </section>
-
-    <!-- Apps grid -->
-    <main class="scaffold">
-      <div class="body" id="body">
-        <!-- Content populated by JS -->
       </div>
     </main>
 
-    <!-- Developer Section -->
-    <section class="dev-section">
-      <div class="dev-card glass-panel">
-        <div class="dev-avatar">
-          <i class="fas fa-code"></i>
-        </div>
-        <div class="dev-info">
-          <span class="dev-label"
-            >بُني بشغف <span class="heart">♥</span> في قلب مصر</span
-          >
-          <h3 class="dev-name">Hassan ELtantawy</h3>
-          <p class="dev-sub">المطوّر والمؤسس</p>
-        </div>
-        <div class="dev-links">
-          <a
-            href="https://github.com/7Eltantawy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="dev-link"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.facebook.com/7Eltantawy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="dev-link dev-link--fb"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook"></i>
-            <span>Facebook</span>
-          </a>
-        </div>
-        <div class="dev-flag" aria-hidden="true">🇪🇬</div>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer glass-panel">
       <div class="footer-inner">
         <div class="footer-brand">
@@ -227,7 +150,6 @@
           >
             <i class="fab fa-github"></i>
           </a>
-
           <img
             src="https://hits.dwyl.com/muslimpack/muslimpackgithubio.svg?style=flat-square"
             alt=""
@@ -238,9 +160,10 @@
       </div>
     </footer>
 
-    <script src="js/models.js"></script>
+    <!-- Scripts -->
     <script src="js/links.js"></script>
+    <script src="js/models.js"></script>
     <script src="js/apps.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/details.js"></script>
   </body>
 </html>
