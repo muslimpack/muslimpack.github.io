@@ -1,15 +1,22 @@
 const apps = [
   new AppData({
     name: "تطبيق قرآن",
+    slug: "quran",
     shortDesc:
       "نسخة متطورة تجمع بين عراقة النص وجمالية التصميم الحديث، لتقديم تجربة تلاوة فريدة.",
     packageId: "com.hassaneltantawy.quran",
     githubIdentifier: "/muslimpack/Quran",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Quran/main/repo_media/logo.png",
+    screenshots: Array.from(
+      { length: 22 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/Quran/main/repo_media/v0.5.0/${(i + 1).toString().padStart(2, "0")}.png`,
+    ),
   }),
   new AppData({
     name: "تطبيق حصن المسلم",
+    slug: "hisn-elmoslem",
     shortDesc:
       "رفيقك اليومي في الأذكار، مستخلص من كتاب 'حصن المسلم' بأسلوب عرض سلس ومريح للعين.",
     packageId: "com.hassaneltantawy.hisnelmoslem",
@@ -17,9 +24,15 @@ const apps = [
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/HisnElmoslem_App/main/hisnelmoslem/assets/images/app_icon.png",
     fdroid: "com.hassaneltantawy.hisnelmoslem",
+    screenshots: Array.from(
+      { length: 13 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/HisnElmoslem_App/main/repo_media/${i.toString().padStart(2, "0")}.png`,
+    ),
   }),
   new AppData({
     name: "تطبيق الأذكار النووية",
+    slug: "al-azkar",
     shortDesc:
       "جامع الأذكار والسنن النبوية للإمام النووي، نضعه بين يديك بتجربة رقمية فريدة ومبسطة.",
     githubIdentifier: "/muslimpack/Al-Azkar",
@@ -29,9 +42,15 @@ const apps = [
     fdroid: "com.hassaneltantawy.alazkar",
     appStoreURL:
       "https://apps.apple.com/us/app/%D8%A7%D9%84%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%88%D9%88%D9%8A%D8%A9/id6756480296",
+    screenshots: Array.from(
+      { length: 4 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/Al-Azkar/main/screenshots/${i.toString().padStart(2, "0")}.png`,
+    ),
   }),
   new AppData({
     name: "تطبيق رقية",
+    slug: "ruqayyah",
     shortDesc:
       "مختارات من الرقية الشرعية الثابتة من الكتاب والسنة، لتكون حصناً للمسلم في كافة أحواله.",
     packageId: "com.hassaneltantawy.ruqayyah",
@@ -40,9 +59,15 @@ const apps = [
       "https://raw.githubusercontent.com/muslimpack/Ruqayyah/main/ruqayyah/assets/images/logo.png",
     appStoreURL:
       "https://apps.apple.com/us/app/rukia-%D8%B1%D9%82%D9%8A%D8%A9/id6756537897",
+    screenshots: Array.from(
+      { length: 4 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/Ruqayyah/main/fastlane/metadata/android/en-US/images/phoneScreenshots/${(i + 1).toString().padStart(2, "0")}.jpg`,
+    ),
   }),
   new AppData({
     name: "تطبيق قضاء",
+    slug: "qadaa",
     shortDesc:
       "مدونتك الشخصية لتنظيم ومتابعة قضاء الفوائت من صلاة وصيام بمنتهى البساطة واليسر.",
     imageUrl:
@@ -50,18 +75,30 @@ const apps = [
     githubIdentifier: "/muslimpack/Qadaa",
     packageId: "com.hassaneltantawy.qadaa",
     fdroid: "com.hassaneltantawy.qadaa",
+    screenshots: Array.from(
+      { length: 8 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/Qadaa/main/fastlane/metadata/android/en-US/images/phoneScreenshots/${(i + 1).toString().padStart(2, "0")}.jpg`,
+    ),
   }),
   new AppData({
     name: "تطبيق مدونة العبادات",
+    slug: "mudawanat-aleibadat",
     shortDesc:
       "أداة ذكية لتحفيز النفس وتدوين العبادات اليومية، تنمي فيك روح المداومة والإحسان في العمل.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/mudawanat_aleibadat/main/repo_media/icon.png",
     githubIdentifier: "/muslimpack/mudawanat_aleibadat",
     packageId: "com.hassaneltantawy.mudawanat_aleibadat",
+    screenshots: Array.from(
+      { length: 7 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/mudawanat_aleibadat/main/repo_media/${(i + 1).toString().padStart(2, "0")}.png`,
+    ),
   }),
   new AppData({
     name: "تطبيق معالم السنة النبوية",
+    slug: "maalem-alsunnah",
     shortDesc:
       "خلاصة جامعة لأصول كتب السنة النبوية الثمانية، مستقاة من جهد العلامة صالح أحمد الشامي.",
     imageUrl:
@@ -70,14 +107,25 @@ const apps = [
     packageId: "com.hassaneltantawy.maalem_alsunnah",
     appStoreURL:
       "https://apps.apple.com/us/app/%D9%85%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B3%D9%86%D8%A9-%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9/id6756390086",
+    screenshots: Array.from(
+      { length: 6 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/maalem_alsunnah/main/screenshots/${(i + 1).toString().padStart(2, "0")}.png`,
+    ),
   }),
   new AppData({
     name: "تطبيق الكامل في السنن",
+    slug: "alkamel",
     shortDesc:
       "موسوعة شاملة في السنة النبوية، ترسم لك معالم المنهج من أصح الصحيح إلى أضعف الضعيف.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/alkamel/main/alkamel/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/alkamel",
     // packageId: "com.hassaneltantawy.alkamel",
+    screenshots: Array.from(
+      { length: 6 },
+      (_, i) =>
+        `https://raw.githubusercontent.com/muslimpack/alkamel/main/screenshots/v0.1.0/${(i + 1).toString().padStart(2, "0")}.png`,
+    ),
   }),
 ];

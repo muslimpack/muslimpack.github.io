@@ -1,6 +1,6 @@
 function createCard(app) {
   return `
-    <article class="card">
+    <article class="card" onclick="window.location.href='details.html?id=${app.slug}'" style="cursor: pointer;">
       ${
         app.imageUrl
           ? `<img src="${app.imageUrl}" alt="${app.name} icon" class="app-icon" loading="lazy" />`
@@ -26,23 +26,22 @@ function createCard(app) {
       <p>${app.shortDesc}</p>
 
       <div class="buttons">
-        ${
-          app.appStoreURL
-            ? `<a href="${app.appStoreURL}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from App Store" title="App Store"><i class="fab fa-apple"></i></a>`
-            : ""
-        }
-        ${
-          app.packageId
-            ? `<a href="${Links.googlePlayURL(app.packageId)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from Google Play" title="Google Play"><i class="fab fa-google-play"></i></a>`
-            : ""
-        }
-        <a href="${Links.windowsURL(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} for Windows" title="Windows"><i class="fab fa-windows"></i></a>
-        <a href="${Links.githubLink(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" aria-label="View ${app.name} on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-        ${
-          app.fdroid
-            ? `<a href="${Links.fdroidURl(app.fdroid)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from F-Droid" title="F-Droid"><span class="svg-icon fdroid-icon"></span></a>`
-            : ""
-        }
+        <a href="details.html?id=${app.slug}" class="btn-more" aria-label="View details for ${app.name}" title="View Details">
+            <i class="fas fa-info-circle"></i> التفاصيل
+        </a>
+        <div class="platforms">
+            ${
+              app.appStoreURL
+                ? `<a href="${app.appStoreURL}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from App Store" title="App Store"><i class="fab fa-apple"></i></a>`
+                : ""
+            }
+            ${
+              app.packageId
+                ? `<a href="${Links.googlePlayURL(app.packageId)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from Google Play" title="Google Play"><i class="fab fa-google-play"></i></a>`
+                : ""
+            }
+            <a href="${Links.githubLink(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" aria-label="View ${app.name} on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
       </div>
     </article>
   `;

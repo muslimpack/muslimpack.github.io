@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل التطبيق - Muslimpack</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="تعرف على تفاصيل ومميزات تطبيقات مًسلم باك." />
+    <meta name="author" content="Hassan ELtantawy" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .details-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .app-header-large {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 30px;
+        border-radius: var(--radius-card);
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(24px) saturate(160%);
+        -webkit-backdrop-filter: blur(24px) saturate(160%);
+        box-shadow: var(--shadow-glass);
+      }
+      @media (max-width: 768px) {
+        .app-header-large {
+          flex-direction: column;
+          text-align: center;
+        }
+        .gallery-grid img {
+          height: 350px;
+        }
+        .download-section {
+          justify-content: center;
+        }
+      }
+      @media (max-width: 480px) {
+        .gallery-grid img {
+          height: 280px;
+        }
+      }
+      .app-icon-large {
+        width: 120px;
+        height: 120px;
+        border-radius: 24px;
+        object-fit: cover;
+        box-shadow: var(--shadow-glow);
+      }
+      .app-title-area h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        color: var(--text-primary);
+      }
+      .app-title-area .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 15px;
+      }
+      .app-description {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+      }
+      .screenshots-gallery {
+        margin: 40px 0;
+      }
+      .gallery-grid {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 20px 0;
+        scroll-snap-type: x mandatory;
+      }
+      .gallery-grid img {
+        height: 450px;
+        border-radius: 16px;
+        scroll-snap-align: start;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+      }
+      .gallery-grid img:hover {
+        transform: scale(1.02);
+      }
+      .download-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 30px;
+      }
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s;
+      }
+      .back-button:hover {
+        color: var(--accent-gold);
+      }
+    </style>
+  </head>
+  <body class="page-home">
+    <!-- Ambient background orbs -->
+    <div class="bg-canvas" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="appbar glass-panel">
+      <div class="appbar-inner">
+        <a href="index.html" class="brand" style="text-decoration: none;">
+          <div class="logo-ring">
+            <img
+              src="assets/images/logo.png"
+              alt="Muslimpack logo"
+              width="56"
+              height="56"
+            />
+          </div>
+          <div class="brand-text">
+            <h1>Muslimpack</h1>
+            <p>تطبيقات مجانية · مفتوحة المصدر · بلا إعلانات</p>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="support/" class="nav-pill">
+            <i class="fas fa-headset"></i>
+            <span>الدعم الفني</span>
+          </a>
+          <a
+            href="https://github.com/muslimpack"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-pill"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="details-container">
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-right"></i> العودة للرئيسية
+      </a>
+
+      <div id="app-content">
+        <!-- Dynamic content will be injected here -->
+        <div style="text-align: center; padding: 100px;">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p style="margin-top: 20px;">جاري تحميل تفاصيل التطبيق...</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer glass-panel">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            src="assets/images/logo.png"
+            alt="Muslimpack"
+            width="32"
+            height="32"
+          />
+          <span>Muslimpack</span>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://x.com/muslimpack"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (Twitter)"
+            class="social-link"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muslim.pack"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="social-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://facebook.com/muslimpack.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="social-link"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://github.com/muslimpack"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <img
+            src="https://hits.dwyl.com/muslimpack/muslimpackgithubio.svg?style=flat-square"
+            alt=""
+            class="tracking-pixel"
+          />
+        </div>
+        <p class="footer-copy">&copy; 2026 Muslimpack. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="js/links.js"></script>
+    <script src="js/app_data.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/details.js"></script>
+  </body>
+</html>

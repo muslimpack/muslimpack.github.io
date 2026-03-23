@@ -581,39 +581,14 @@ body.page-home {
 
 .card .buttons {
   display: flex;
-  gap: 8px;
+  width: 100%;
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.card .buttons a {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-secondary);
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 220ms ease;
+  margin-top: 8px;
 }
 
-.card .buttons a:hover {
-  background: rgba(201, 169, 110, 0.18);
-  border-color: rgba(201, 169, 110, 0.4);
-  color: var(--accent-gold);
-  transform: translateY(-3px) scale(1.08);
-}
-
-.card .buttons a:visited {
-  color: var(--text-muted);
-}
-.card .buttons a:visited:hover {
-  color: var(--accent-gold);
-}
 
 .svg-icon {
   display: inline-block;
@@ -1120,6 +1095,97 @@ a.value:hover {
   opacity: 0;
   pointer-events: none;
   clip: rect(0 0 0 0);
+}
+
+/* ==========================================================
+   BUTTONS AND ACTIONS
+   ========================================================== */
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(56, 201, 168, 0.08);
+  border: 1px solid rgba(56, 201, 168, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--accent-teal);
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-more:hover {
+  background: rgba(56, 201, 168, 0.15);
+  border-color: var(--accent-teal);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 201, 168, 0.2);
+}
+
+
+.platforms {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.platforms a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.platforms a:hover {
+  background: rgba(201, 169, 110, 0.15);
+  border-color: rgba(201, 169, 110, 0.3);
+  color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+
+.btn-download i,
+.btn-download .svg-icon {
+  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  box-shadow: var(--shadow-glass);
+}
+
+
+.btn-download:hover {
+  border-color: var(--accent-teal);
+  background: rgba(56, 201, 168, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 201, 168, 0.15);
 }
 
 /* ==========================================================
