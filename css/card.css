@@ -61,10 +61,28 @@
   transform: scale(1.1) translateY(-5px);
 }
 
+.card .buttons a:has(.fdroid-icon) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .buttons .fdroid-icon {
+  width: 25px;
+  height: 25px;
+  filter: invert(80%) sepia(5%) saturate(100%) hue-rotate(314deg) brightness(95%) contrast(90%);
+  transition: filter 250ms ease-in-out;
+}
+
+.card .buttons a:hover .fdroid-icon {
+  filter: invert(100%) brightness(100%);
+}
+
 .card .buttons {
   margin: 0;
   gap: 20px;
   display: flex;
+  align-items: center;
 }
 
 .card .badges {
