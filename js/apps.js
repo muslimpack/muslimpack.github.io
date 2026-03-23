@@ -16,7 +16,7 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق حصن المسلم",
-    slug: "hisn-elmoslem",
+    slug: "hisnelmoslem",
     shortDesc:
       "رفيقك اليومي في الأذكار، مستخلص من كتاب 'حصن المسلم' بأسلوب عرض سلس ومريح للعين.",
     packageId: "com.hassaneltantawy.hisnelmoslem",
@@ -32,7 +32,7 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق الأذكار النووية",
-    slug: "al-azkar",
+    slug: "alazkar",
     shortDesc:
       "جامع الأذكار والسنن النبوية للإمام النووي، نضعه بين يديك بتجربة رقمية فريدة ومبسطة.",
     githubIdentifier: "/muslimpack/Al-Azkar",
@@ -83,7 +83,7 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق مدونة العبادات",
-    slug: "mudawanat-aleibadat",
+    slug: "mudawanat_aleibadat",
     shortDesc:
       "أداة ذكية لتحفيز النفس وتدوين العبادات اليومية، تنمي فيك روح المداومة والإحسان في العمل.",
     imageUrl:
@@ -98,7 +98,7 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق معالم السنة النبوية",
-    slug: "maalem-alsunnah",
+    slug: "maalem_alsunnah",
     shortDesc:
       "خلاصة جامعة لأصول كتب السنة النبوية الثمانية، مستقاة من جهد العلامة صالح أحمد الشامي.",
     imageUrl:
