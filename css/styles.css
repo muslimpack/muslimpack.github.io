@@ -811,13 +811,14 @@ body.page-home {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Perfect circles */
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 200ms ease;
+  vertical-align: middle;
 }
 
 .social-link:hover {
@@ -1092,14 +1093,15 @@ a.value:hover {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 8px 14px;
+  padding: 0 18px;
+  height: 40px;
   border-radius: var(--radius-pill);
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(10px);
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   transition: all 200ms ease;
 }
@@ -1109,6 +1111,29 @@ a.value:hover {
   border-color: rgba(201, 169, 110, 0.3);
   color: var(--accent-gold);
   transform: translateY(-2px);
+}
+
+.footer-hits {
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  height: 40px; /* Explicit matching height */
+  opacity: 0.8;
+  transition: opacity 200ms;
+}
+
+.footer-hits-pill {
+  padding: 0 14px !important;
+  height: 40px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-badge {
+  height: 20px;
+  display: block;
+  pointer-events: none;
 }
 
 /* ==========================================================
