@@ -27,6 +27,11 @@ function createCard(app) {
 
       <div class="buttons">
         ${
+          app.appStoreURL
+            ? `<a href="${app.appStoreURL}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from App Store" title="App Store"><i class="fab fa-apple"></i></a>`
+            : ""
+        }
+        ${
           app.packageId
             ? `<a href="${Links.googlePlayURL(app.packageId)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from Google Play" title="Google Play"><i class="fab fa-google-play"></i></a>`
             : ""
