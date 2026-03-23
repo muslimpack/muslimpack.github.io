@@ -589,7 +589,6 @@ body.page-home {
   margin-top: 8px;
 }
 
-
 .svg-icon {
   display: inline-block;
   width: 1.1rem;
@@ -1103,6 +1102,7 @@ a.value:hover {
 .btn-more {
   display: inline-flex;
   align-items: center;
+  height: 38px;
   gap: 8px;
   background: rgba(56, 201, 168, 0.08);
   border: 1px solid rgba(56, 201, 168, 0.2);
@@ -1124,7 +1124,6 @@ a.value:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(56, 201, 168, 0.2);
 }
-
 
 .platforms {
   display: flex;
@@ -1154,7 +1153,6 @@ a.value:hover {
   transform: translateY(-2px);
 }
 
-
 .btn-download i,
 .btn-download .svg-icon {
   font-size: 1.2rem;
@@ -1179,7 +1177,6 @@ a.value:hover {
   -webkit-backdrop-filter: blur(24px) saturate(160%);
   box-shadow: var(--shadow-glass);
 }
-
 
 .btn-download:hover {
   border-color: var(--accent-teal);
