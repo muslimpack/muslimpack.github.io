@@ -9,6 +9,8 @@ class AppData {
     imageUrl = null,
     packageId = null,
     fdroid = null,
+    features = [],
+    changelog = [],
     screenshots = [],
   }) {
     this.name = name;
@@ -20,6 +22,8 @@ class AppData {
     this.imageUrl = imageUrl;
     this.packageId = packageId;
     this.fdroid = fdroid;
+    this.features = features;
+    this.changelog = changelog;
     this.screenshots = screenshots;
   }
 }

@@ -67,6 +67,34 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
 
+        <div class="app-details-grid">
+            ${
+              app.features && app.features.length > 0
+                ? `
+                <div class="details-section glass-panel">
+                    <h2 class="section-title"><i class="fas fa-star"></i> أهم المميزات</h2>
+                    <ul class="features-list">
+                        ${app.features.map((f) => `<li>${f}</li>`).join("")}
+                    </ul>
+                </div>
+            `
+                : ""
+            }
+
+            ${
+              app.changelog && app.changelog.length > 0
+                ? `
+                <div class="details-section glass-panel">
+                    <h2 class="section-title"><i class="fas fa-bolt"></i> ما الجديد؟</h2>
+                    <ul class="changelog-list">
+                        ${app.changelog.map((c) => `<li>${c}</li>`).join("")}
+                    </ul>
+                </div>
+            `
+                : ""
+            }
+        </div>
+
         ${
           app.screenshots && app.screenshots.length > 0
             ? `
