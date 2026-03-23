@@ -3,86 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muslimpack</title>
-
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Muslimpack" />
-    <meta
-      property="og:description"
-      content="Muslimpack open source, free and ad-free apps for muslims."
-    />
-    <meta property="og:image" content="assets/images/logo.png" />
+    <title>Muslimpack | Free & Open Source Apps for Muslims</title>
+    <meta name="description" content="Muslimpack provides open source, free, and ad-free applications designed for Muslims, including Quran, Hisn Elmoslem, and more." />
+    <meta name="keywords" content="Muslim, Islam, Apps, Open Source, Quran, Hisn Elmoslem, Prayer, Salah, Ad-free" />
+    <meta name="author" content="Muslimpack" />
+    <link rel="canonical" href="https://muslimpack.github.io/" />
+    <meta property="og:title" content="Muslimpack | Free & Open Source Apps for Muslims" />
+    <meta property="og:description" content="Open source, free and ad-free apps for muslims. Join our community on GitHub." />
+    <meta property="og:image" content="https://muslimpack.github.io/assets/images/logo.png" />
+    <meta property="og:url" content="https://muslimpack.github.io/" />
     <meta property="og:type" content="website" />
-
-    <!-- Favicon and Apple Touch Icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-icon-180x180.png"
-    />
-
-    <!-- Stylesheets -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muslimpack | Free & Open Source Apps for Muslims" />
+    <meta name="twitter:description" content="Open source, free and ad-free apps for muslims." />
+    <meta name="twitter:image" content="https://muslimpack.github.io/assets/images/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
 
   <body>
-    <div class="appbar">
-      <img src="assets/images/logo.png" alt="muslimpack logo" />
-      <div class="title">
-        <h1>Muslimpack</h1>
-        <p>تطبيقات مجانية ومفتوحة المصدر وخالية من الإعلانات</p>
-      </div>
+    <!-- Ambient background orbs -->
+    <div class="bg-canvas" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+      <div class="noise-overlay"></div>
     </div>
 
-    <div class="scaffold">
-      <div class="body" id="body"></div>
-    </div>
-
-    <div class="footer">
-      <div class="social-icons">
-        <a
-          href="https://x.com/muslimpack"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/muslim.pack"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://facebook.com/muslimpack.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a
-          href="https://github.com/muslimpack"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-github"></i>
-        </a>
+    <!-- Header -->
+    <header class="appbar glass-panel">
+      <div class="appbar-inner">
+        <div class="brand">
+          <div class="logo-ring">
+            <img src="assets/images/logo.png" alt="Muslimpack logo" width="56" height="56" />
+          </div>
+          <div class="brand-text">
+            <h1>Muslimpack</h1>
+            <p>تطبيقات مجانية · مفتوحة المصدر · بلا إعلانات</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="https://github.com/muslimpack" target="_blank" rel="noopener noreferrer" class="nav-pill">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </nav>
       </div>
-    </div>
+    </header>
+
+    <!-- Hero strip -->
+    <section class="hero">
+      <div class="hero-badge">✦ مفتوح المصدر بالكامل</div>
+      <h2 class="hero-title">تطبيقات صُنعت<br/><span class="gradient-text">للمسلم الحديث</span></h2>
+      <p class="hero-sub">نقدم أدوات رقمية راقية، مجانية وخالية من الإعلانات، لمرافقتك في رحلتك الإيمانية.</p>
+      <div class="hero-stats">
+        <div class="stat-pill"><i class="fas fa-shield-halved"></i> بلا إعلانات</div>
+        <div class="stat-pill"><i class="fas fa-code-branch"></i> مفتوح المصدر</div>
+        <div class="stat-pill"><i class="fas fa-infinity"></i> مجاني للأبد</div>
+      </div>
+    </section>
+
+    <!-- Apps grid -->
+    <main class="scaffold">
+      <div class="body" id="body">
+        <!-- Content populated by JS -->
+      </div>
+    </main>
+
+    <!-- Developer Section -->
+    <section class="dev-section">
+      <div class="dev-card glass-panel">
+        <div class="dev-avatar">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="dev-info">
+          <span class="dev-label">صُنع بـ <span class="heart">♥</span> في مصر</span>
+          <h3 class="dev-name">Hassan ELtantawy</h3>
+          <p class="dev-sub">المطوّر والمؤسس</p>
+        </div>
+        <div class="dev-links">
+          <a href="https://github.com/7Eltantawy" target="_blank" rel="noopener noreferrer" class="dev-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.facebook.com/7Eltantawy" target="_blank" rel="noopener noreferrer" class="dev-link dev-link--fb" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="dev-flag" aria-hidden="true">🇪🇬</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Muslimpack" width="32" height="32" />
+          <span>Muslimpack</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://x.com/muslimpack" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/muslim.pack" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/muslimpack.org" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/muslimpack" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Muslimpack. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
 
     <script src="js/app_data.js"></script>
     <script src="js/links.js"></script>
