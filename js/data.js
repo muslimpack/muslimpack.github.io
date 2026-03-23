@@ -2,7 +2,7 @@ const apps = [
   new AppData({
     name: "تطبيق قرآن",
     shortDesc:
-      "التطبيق عبارة عن Flutter Replication من تطبيق قرآن أندرويد مع إضافة ميزات وشكل جديد للتطبيق",
+      "نسخة متطورة تجمع بين عراقة النص وجمالية التصميم الحديث، لتقديم تجربة تلاوة فريدة.",
     packageId: "com.hassaneltantawy.quran",
     githubIdentifier: "/muslimpack/Quran",
     imageUrl:
@@ -11,7 +11,7 @@ const apps = [
   new AppData({
     name: "تطبيق حصن المسلم",
     shortDesc:
-      "تطبيق للأذكار محتواه مأخوذ من كتاب حصن المسلم للدكتور محمد بن وهف القحطاني رحمه الله",
+      "رفيقك اليومي في الأذكار، مستخلص من كتاب 'حصن المسلم' بأسلوب عرض سلس ومريح للعين.",
     packageId: "com.hassaneltantawy.hisnelmoslem",
     githubIdentifier: "/muslimpack/HisnElmoslem_App",
     imageUrl:
@@ -21,7 +21,7 @@ const apps = [
   new AppData({
     name: "تطبيق الأذكار النووية",
     shortDesc:
-      "عن كتاب الأذكار للإمام الحافظ يحيى بن شرف الدين النووي رحمه الله",
+      "جامع الأذكار والسنن النبوية للإمام النووي، نضعه بين يديك بتجربة رقمية فريدة ومبسطة.",
     githubIdentifier: "/muslimpack/Al-Azkar",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Al-Azkar/main/alazkar/assets/icons/app.png",
@@ -31,7 +31,7 @@ const apps = [
   new AppData({
     name: "تطبيق رقية",
     shortDesc:
-      "الرقية الشرعية من القرآن الكريم والسنة النبوية للدكتور خالد بن عبد الرحمن الجريسي",
+      "مختارات من الرقية الشرعية الثابتة من الكتاب والسنة، لتكون حصناً للمسلم في كافة أحواله.",
     packageId: "com.hassaneltantawy.ruqayyah",
     githubIdentifier: "/muslimpack/Ruqayyah",
     imageUrl:
@@ -39,7 +39,8 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق قضاء",
-    shortDesc: "تطبيق يساعدك على تنظيم قضاء الصلوات والصيام الفائت",
+    shortDesc:
+      "مدونتك الشخصية لتنظيم ومتابعة قضاء الفوائت من صلاة وصيام بمنتهى البساطة واليسر.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Qadaa/main/qadaa/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/Qadaa",
@@ -48,7 +49,8 @@ const apps = [
   }),
   new AppData({
     name: "تطبيق مدونة العبادات",
-    shortDesc: "لتدوين عباداتك اليومية بسهولة ويسر",
+    shortDesc:
+      "أداة ذكية لتحفيز النفس وتدوين العبادات اليومية، تنمي فيك روح المداومة والإحسان في العمل.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/mudawanat_aleibadat/main/repo_media/icon.png",
     githubIdentifier: "/muslimpack/mudawanat_aleibadat",
@@ -57,7 +59,7 @@ const apps = [
   new AppData({
     name: "تطبيق معالم السنة النبوية",
     shortDesc:
-      "وهو خلاصة 14 كتابا هي أصول كتب السنة شرف بجمعه صالح أحمد الشامي",
+      "خلاصة جامعة لأصول كتب السنة النبوية الثمانية، مستقاة من جهد العلامة صالح أحمد الشامي.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/maalem_alsunnah/main/maalem_alsunnah/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/maalem_alsunnah",
@@ -66,7 +68,7 @@ const apps = [
   new AppData({
     name: "تطبيق الكامل في السنن",
     shortDesc:
-      'السنة النبوية من أصح الصحيح إلى أضعف الضعيف تطبيق في السنة عن كتاب "الكامل في السنن" لمؤلفه الدكتور عامر أحمد الحسيني',
+      "موسوعة شاملة في السنة النبوية، ترسم لك معالم المنهج من أصح الصحيح إلى أضعف الضعيف.",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/alkamel/main/alkamel/assets/images/app_icon.png",
     githubIdentifier: "/muslimpack/alkamel",
