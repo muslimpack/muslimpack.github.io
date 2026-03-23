@@ -1113,27 +1113,13 @@ a.value:hover {
   transform: translateY(-2px);
 }
 
-.footer-hits {
-  margin-right: 12px;
-  display: inline-flex;
-  align-items: center;
-  height: 40px; /* Explicit matching height */
-  opacity: 0.8;
-  transition: opacity 200ms;
-}
-
-.footer-hits-pill {
-  padding: 0 14px !important;
-  height: 40px !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-badge {
-  height: 20px;
-  display: block;
+.tracking-pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
   pointer-events: none;
+  clip: rect(0 0 0 0);
 }
 
 /* ==========================================================
