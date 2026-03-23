@@ -466,6 +466,24 @@ body {
   color: var(--accent-gold);
 }
 
+.svg-icon {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+}
+
+.fdroid-icon {
+  mask-image: url("../assets/images/f-droid.svg");
+  -webkit-mask-image: url("../assets/images/f-droid.svg");
+}
+
 /* ---- Footer ---- */
 .footer {
   position: fixed;

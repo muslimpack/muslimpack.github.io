@@ -40,7 +40,7 @@ function createCard(app) {
         <a href="${Links.githubLink(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" aria-label="View ${app.name} on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
         ${
           app.fdroid
-            ? `<a href="${Links.fdroidURl(app.fdroid)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from F-Droid" title="F-Droid"><i class="fa-brands fa-android"></i></a>`
+            ? `<a href="${Links.fdroidURl(app.fdroid)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from F-Droid" title="F-Droid"><span class="svg-icon fdroid-icon"></span></a>`
             : ""
         }
       </div>
