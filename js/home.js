@@ -26,21 +26,21 @@ function createCard(app) {
       <p>${app.shortDesc}</p>
 
       <div class="buttons">
-        <a href="details.html?id=${app.slug}" class="btn-more" aria-label="View details for ${app.name}" title="View Details">
+        <a href="details.html?id=${app.slug}" class="btn-more" onclick="event.stopPropagation()" aria-label="View details for ${app.name}" title="View Details">
             <i class="fas fa-info-circle"></i> التفاصيل
         </a>
         <div class="platforms">
             ${
               app.appStoreURL
-                ? `<a href="${app.appStoreURL}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from App Store" title="App Store"><i class="fab fa-apple"></i></a>`
+                ? `<a href="${app.appStoreURL}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="Download ${app.name} from App Store" title="App Store"><i class="fab fa-apple"></i></a>`
                 : ""
             }
             ${
               app.packageId
-                ? `<a href="${Links.googlePlayURL(app.packageId)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${app.name} from Google Play" title="Google Play"><i class="fab fa-google-play"></i></a>`
+                ? `<a href="${Links.googlePlayURL(app.packageId)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="Download ${app.name} from Google Play" title="Google Play"><i class="fab fa-google-play"></i></a>`
                 : ""
             }
-            <a href="${Links.githubLink(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" aria-label="View ${app.name} on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="${Links.githubLink(app.githubIdentifier)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="View ${app.name} on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </article>
