@@ -43,6 +43,8 @@ const apps = [
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/HisnElmoslem_App/main/hisnelmoslem/assets/images/app_icon.png",
     fdroid: "com.hassaneltantawy.hisnelmoslem",
+    appStoreURL:
+      "https://apps.apple.com/us/app/%D8%AD%D8%B5%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85-%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85/id6471274071",
     screenshots: Array.from(
       { length: 13 },
       (_, i) =>
