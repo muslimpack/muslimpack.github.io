@@ -144,6 +144,7 @@ const apps = [
       "https://raw.githubusercontent.com/muslimpack/mudawanat_aleibadat/main/repo_media/icon.png",
     githubIdentifier: "/muslimpack/mudawanat_aleibadat",
     packageId: "com.hassaneltantawy.mudawanat_aleibadat",
+    appStoreURL: "https://apps.apple.com/app/مدونة-العبادات/id6756537279",
     screenshots: Array.from(
       { length: 7 },
       (_, i) =>
