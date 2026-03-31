@@ -17,6 +17,8 @@ const apps = [
     githubIdentifier: "/muslimpack/Quran",
     imageUrl:
       "https://raw.githubusercontent.com/muslimpack/Quran/main/repo_media/logo.png",
+    appStoreURL:
+      "https://apps.apple.com/app/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86-%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85-%D8%AA%D8%AF%D8%A8%D8%B1-%D9%88%D8%AD%D9%81%D8%B8/id6761289232",
     screenshots: Array.from(
       { length: 22 },
       (_, i) =>
